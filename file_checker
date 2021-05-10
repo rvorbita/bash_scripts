@@ -1,0 +1,38 @@
+#! /usr/bin/bash
+
+
+#application to check if the parameter is a file
+#get the basename of the file
+#provide the file extension 
+#provide the file status
+#echo to the user.
+#else print the file name and error message then exit.
+
+
+
+
+#default argument number 1-9
+#1 
+
+
+
+BASENAME=$(basename $0)
+
+
+
+if [[ -e $1 ]]; then
+	echo "File type: "
+	file -v $1
+
+	echo 
+
+	echo "Status type: "
+	stat $1
+
+else
+	echo "$BASENAME usage: $BASENAME "
+	exit 1
+
+
+fi 
+

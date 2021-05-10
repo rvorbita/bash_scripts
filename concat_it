@@ -1,0 +1,15 @@
+#! /usr/bin/bash -x
+
+
+#get information from user and print using concatination.
+
+
+read -p "Enter your First Name: " fname
+
+read -p "Enter your Last Name: " lname
+
+echo "${lname},${fname}"
+
+
+
+
